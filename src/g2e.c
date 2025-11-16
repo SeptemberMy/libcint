@@ -4497,7 +4497,7 @@ FINT CINTg0_2e(double *g, double *rij, double *rkl, double cutoff, CINTEnvVars *
                 fac1 *= sqrt(theta);
                 int err = CINTrys_roots(nroots, x, u, w);
                 if (err) {
-                        fprintf(stderr, "sr_rys_roots failed. "
+                        fprintf(stderr, "lr_rys_roots failed. "
                                 "Integrals for l=(%d,%d|%d,%d) exp=(%g,%g|%g,%g) "
                                 "are set to 0\n",
                                 envs->li_ceil, envs->lj_ceil, envs->lk_ceil, envs->ll_ceil,
